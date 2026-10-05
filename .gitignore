@@ -2,6 +2,10 @@
 __pycache__/
 *.py[codz]
 *$py.class
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
 
 # C extensions
 *.so
@@ -158,6 +162,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
 
 # Spyder project settings
 .spyderproject
