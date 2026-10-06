@@ -52,8 +52,8 @@ Sigue estos pasos para clonar el proyecto y configurar el entorno de ejecución:
 ### 1. Clonar el repositorio
 
 ```
-git clone <URL_DE_TU_REPOSITORIO>
-cd <NOMBRE_DEL_REPOSITORIO>
+git clone https://github.com/Tadand-64/An-lisis-de-sensores-industriales-Examen-Primer-parcial.git
+cd An-lisis-de-sensores-industriales-Examen-Primer-parcial
 
 ```
 
