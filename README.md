@@ -1,8 +1,8 @@
 # Análisis de sensores industriales Examen Primer parcial
 
-# Andrés Tadeo Carmona Capula
-# IDIA222
-# 05/10/2026
+### Andrés Tadeo Carmona Capula
+### IDIA222
+### 05/10/2026
 
 # Monitoreo y Análisis de Sensores Industriales
 
