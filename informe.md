@@ -22,7 +22,7 @@ Este informe presenta la evaluación técnica y estratégica del sistema de moni
 
 ---
 
-## 5. Las 5 V aplicadas al proyecto
+## Las 5 V aplicadas al proyecto
 
 A continuación se presenta la caracterización del proyecto mediante el marco de las **5 V del Big Data**, contrastando la fase analítica actual con las necesidades operativas de la futura expansión del sistema.
 
@@ -36,7 +36,7 @@ A continuación se presenta la caracterización del proyecto mediante el marco d
 
 ---
 
-## 6. Tipos de datos y procesamiento tradicional
+## Tipos de datos y procesamiento tradicional
 
 ### Clasificación de Elementos del Sistema
 
@@ -59,7 +59,7 @@ Al escalar a miles de sensores emitiendo mediciones cada segundo:
 
 ---
 
-## 7. Batch y Streaming
+## Batch y Streaming
 
 ### 1. Tipo de Procesamiento Realizado y Justificación
 
@@ -78,7 +78,7 @@ Al escalar a miles de sensores emitiendo mediciones cada segundo:
 
 ---
 
-## 8. Arquitecturas Lambda y Kappa
+## Arquitecturas Lambda y Kappa
 
 ### Escenario A: Combinación de recálculo histórico en lote con procesamiento en tiempo real
 
@@ -107,7 +107,7 @@ Al escalar a miles de sensores emitiendo mediciones cada segundo:
 
 ---
 
-## 9. Nivel de Analítica: Descriptiva, Predictiva y Prescriptiva
+## Nivel de Analítica: Descriptiva, Predictiva y Prescriptiva
 
 ### 1. Analítica Descriptiva (¿Qué sucedió?)
 
