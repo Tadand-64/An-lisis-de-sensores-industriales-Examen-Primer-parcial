@@ -1,10 +1,9 @@
-# Análisis de sensores industriales Examen Primer parcial
+# Primer parcial: análisis de sensores industriales
+# Proyecto y análisis práctico
 
-# Andrés Tadeo Carmona Capula
-# IDIA222
-# 05/10/2026
-
-# Monitoreo y Análisis de Sensores Industriales
+### Andrés Tadeo Carmona Capula
+### IDIA222
+### 05/10/2026
 
 Este proyecto realiza el procesamiento y análisis de mediciones de temperatura y vibración en plantas industriales. La solución se encuentra implementada de forma reproducible a través de un Jupyter Notebook en Python (`src/analisis.ipynb`).
 
