@@ -88,33 +88,22 @@ Al escalar a miles de sensores emitiendo mediciones cada segundo:
   2. **Speed Layer:** Procesa los datos recientes en tiempo real para ofrecer respuestas de baja latencia.
   3. **Serving Layer:** Fusiona los resultados de ambas rutas para responder a las consultas de los usuarios.
 
-```
-                       ┌────────────────┐     ┌────────────────┐
-                ┌────> │  Batch Layer   │ --> │  Serving Layer │ ──┐
-                │      │ (Histórico/CSV)│     │(Vistas Lote)   │   │
-┌─────────────┐ │      └────────────────┘     └────────────────┘   │   ┌──────────────┐
-│  Ingreso    │─┤                                                  ├──>│ Consulta /   │
-│ de Datos    │ │                                                  │   │ Vista Final  │
-│ (Sensores)  │ │      ┌────────────────┐     ┌────────────────┐   │   └──────────────┘
-└─────────────┘ └────> │  Speed Layer   │ --> │  Serving Layer │ ──┘
-                       │ (Tiempo Real)  │     │(Vistas Rápidas)│
-                       └────────────────┘     └────────────────┘
-```
+
+
+![Captura de pantalla](evidencias/Lambda.png)
+
+
 
 ### Escenario B: Unificación del procesamiento de eventos con capacidad de reprocesamiento
 
 * **Arquitectura Elegida:** **Arquitectura Kappa**.
 * **Justificación:** La arquitectura Kappa simplifica la infraestructura eliminando la ruta de lotes por separado. Todo el flujo de datos se procesa mediante un **único motor de Streaming**. Si se necesita recalcular o analizar el historial, los eventos se vuelven a reproducir (*replay*) desde un registro inmutable (como Apache Kafka con retención extendida) utilizando el mismo código de procesamiento.
 
-```
-┌─────────────┐     ┌─────────────────────┐     ┌─────────────────┐     ┌──────────────┐
-│  Ingreso    │ --> │  Log de Eventos     │ --> │  Engine de      │ --> │ Serving      │
-│ de Sensores │     │  Persistente        │     │  Streaming      │     │ Layer        │
-└─────────────┘     │ (Kafka / Replay Log)│     │ (Única Lógica)  │     └──────────────┘
-                    └─────────────────────┘     └─────────────────┘
-                               │                         ▲
-                               └─ Reprocesar / Replay ───┘
-```
+
+
+![Captura de pantalla](evidencias/Kappa.png)
+
+
 
 ---
 
